@@ -4,6 +4,8 @@ This is an open source project for downloading free, high quality vector logos o
 
 ## Getting Started
 
+### Prerequisites
+
 In the project directory, you can run:
 
 ### `npm start`
