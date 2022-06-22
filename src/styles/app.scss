@@ -1,0 +1,56 @@
+@import "settings";
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba($color: $gray, $alpha: 0.1);
+
+  h1 {
+    font-size: 150%;
+    font-weight: 500;
+    color: $dark;
+    min-width: 500px;
+
+    @media screen and (max-width: 570px) {
+      min-width: auto;
+      font-size: 120%;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: $blue;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    color: $blue;
+    font-weight: 500;
+    margin: 1.25rem 0;
+  }
+  &-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: $dark;
+    color: $light;
+    &:hover {
+      box-shadow: 0 0 0 1px $blue;
+    }
+  }
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  @media screen and (max-width: 690px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
